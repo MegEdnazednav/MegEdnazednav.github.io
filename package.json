@@ -2,6 +2,7 @@
   "name": "stupid-widget-try",
   "version": "0.1.0",
   "private": true,
+  "homepage": "http://megednazednav.github.io",
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
@@ -12,8 +13,9 @@
   },
   "scripts": {
     "start": "react-scripts start",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "build": "react-scripts build",
-    "build:widget": "parcel build src/index.js --no-source-maps -d docs",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
@@ -33,6 +35,7 @@
     ]
   },
   "devDependencies": {
+    "gh-pages": "^3.1.0",
     "parcel-bundler": "^1.12.4"
   }
 }
