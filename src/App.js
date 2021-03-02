@@ -44,7 +44,7 @@ function App({ domElement }) {
   return (
     <div className="stupid_widget__app">
       <h1 className="stupid_widget__header">
-        CUTE DOG PICTURES
+        * CUTE DOG PICTURES *
       </h1>
       <div className="stupid_widget__inner">
         {loading && "Loading..."}
